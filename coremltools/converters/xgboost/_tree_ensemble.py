@@ -163,7 +163,7 @@ def convert_tree_ensemble(
         model, (_xgboost.core.Booster, _xgboost.XGBRegressor, _xgboost.XGBClassifier)
     ):
 
-        model = _booster_feature_names_workaround(model, feature_names)
+        # model = _booster_feature_names_workaround(model, feature_names)
 
         # Testing a few corner cases that we don't support
         if isinstance(model, _xgboost.XGBRegressor):
